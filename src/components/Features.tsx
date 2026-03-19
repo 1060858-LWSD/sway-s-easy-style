@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Leaf, Tag, Repeat } from "lucide-react";
+import { ShieldCheck, Leaf, Tag, Eye } from "lucide-react";
 
 const features = [
   {
-    icon: ShieldCheck,
-    title: "Verified Quality",
-    description: "Every item is vetted for materials, construction, and durability before it reaches you.",
+    icon: Eye,
+    title: "Instant Transparency",
+    description: "See how products are made, where materials come from, and whether the brand is genuinely sustainable.",
   },
   {
     icon: Tag,
-    title: "Fair Pricing",
-    description: "We cut out middlemen so you pay what clothes are actually worth — nothing more.",
+    title: "Student-Friendly Prices",
+    description: "Sway highlights fair pricing and finds budget-friendly sustainable alternatives you can actually afford.",
   },
   {
     icon: Leaf,
-    title: "Sustainable First",
-    description: "We partner with brands that prioritise ethical sourcing and low-impact production.",
+    title: "Sustainability Scores",
+    description: "Every product gets a clear score based on materials, labour practices, and environmental impact.",
   },
   {
-    icon: Repeat,
-    title: "Easy Returns",
-    description: "Changed your mind? Our hassle-free returns keep things stress-free.",
+    icon: ShieldCheck,
+    title: "Brand Trust Ratings",
+    description: "Know which brands are genuinely ethical vs. greenwashing — backed by real data.",
   },
 ];
 
@@ -38,10 +38,10 @@ const Features = () => (
     <div className="container mx-auto px-6">
       <div className="text-center max-w-2xl mx-auto mb-16">
         <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
-          Why shoppers love Sway
+          Built for students who care
         </h2>
         <p className="font-body text-muted-foreground text-lg">
-          We solve the biggest frustrations of buying clothes online.
+          Everything you need to shop sustainably — without the research.
         </p>
       </div>
 

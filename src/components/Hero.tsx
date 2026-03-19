@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-clothing.jpg";
+import heroImg from "@/assets/hero-extension.jpg";
+import { Chrome } from "lucide-react";
 
 const Hero = () => (
   <section className="relative min-h-screen flex items-center pt-16">
@@ -12,23 +13,27 @@ const Hero = () => (
         className="max-w-xl mx-auto lg:mx-0"
       >
         <span className="inline-block text-sm font-body font-semibold tracking-widest uppercase text-accent mb-4">
-          Shop smarter. Live lighter.
+          Browser Extension for Smarter Shopping
         </span>
         <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-foreground mb-6">
-          Clothing you can trust,{" "}
-          <span className="text-primary italic">delivered.</span>
+          Shop sustainably{" "}
+          <span className="text-primary italic">without the guesswork.</span>
         </h1>
-        <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
-          Sway makes online shopping practical — curating quality pieces at fair prices from brands that respect people and the planet.
+        <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
+          Sway is a free browser extension that shows you sustainability scores, fair pricing, and brand trust — right on sites like Amazon and Hollister.
         </p>
         <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
           <Button variant="hero" size="lg">
-            Get Early Access
+            <Chrome className="w-5 h-5 mr-2" />
+            Add to Chrome — It's Free
           </Button>
           <Button variant="hero-outline" size="lg">
             Learn More
           </Button>
         </div>
+        <p className="font-body text-xs text-muted-foreground mt-4">
+          Also available for Firefox & Edge · No account needed
+        </p>
       </motion.div>
 
       <motion.div
@@ -37,17 +42,13 @@ const Hero = () => (
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative"
       >
-        <div className="rounded-2xl overflow-hidden shadow-2xl">
+        <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
           <img
             src={heroImg}
-            alt="Sustainable clothing flat lay with organic cotton and linen"
-            className="w-full h-[500px] lg:h-[600px] object-cover"
+            alt="Sway browser extension showing sustainability scores on an online clothing store"
+            className="w-full h-auto object-cover"
             loading="eager"
           />
-        </div>
-        <div className="absolute -bottom-6 -left-6 bg-card rounded-xl p-5 shadow-lg border border-border hidden lg:block">
-          <p className="font-display text-3xl text-primary">92%</p>
-          <p className="font-body text-sm text-muted-foreground">less returns with Sway</p>
         </div>
       </motion.div>
     </div>

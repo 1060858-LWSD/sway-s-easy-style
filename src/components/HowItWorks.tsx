@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { number: "01", title: "Browse curated picks", description: "We surface quality, sustainable clothing — no endless scrolling." },
-  { number: "02", title: "Get honest details", description: "Real materials info, sizing guidance, and transparent pricing." },
-  { number: "03", title: "Shop with confidence", description: "Secure checkout, fast shipping, and effortless returns if needed." },
+  { number: "01", title: "Install the extension", description: "Add Sway to your browser in one click — no sign-up required." },
+  { number: "02", title: "Shop like you normally do", description: "Browse Amazon, Hollister, or any clothing site. Sway runs quietly in the background." },
+  { number: "03", title: "See what brands hide", description: "Get instant sustainability scores, pricing insights, and brand trust ratings on every product page." },
 ];
 
 const HowItWorks = () => (
@@ -14,7 +14,7 @@ const HowItWorks = () => (
           How Sway works
         </h2>
         <p className="font-body text-muted-foreground text-lg">
-          Three simple steps to better online shopping.
+          Three steps. Zero friction. Total transparency.
         </p>
       </div>
 
