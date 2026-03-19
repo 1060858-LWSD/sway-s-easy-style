@@ -21,7 +21,7 @@ const Hero = () => (
         <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
           Sway makes online shopping practical — curating quality pieces at fair prices from brands that respect people and the planet.
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
           <Button variant="hero" size="lg">
             Get Early Access
           </Button>
