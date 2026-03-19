@@ -5,7 +5,7 @@ const testimonials = [
   {
     quote: "Not knowing how something is made prevents me from shopping sustainably.",
     name: "William W.",
-    role: "College Student",
+    role: "High School Student",
   },
   {
     quote: "Price factors in quite a lot because I like to save money whenever possible.",
