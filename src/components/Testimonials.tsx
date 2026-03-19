@@ -15,7 +15,7 @@ const testimonials = [
   {
     quote: "Keeping an eye out for products that aren't crazy cost-involved.",
     name: "Tanush B.",
-    role: "College Student",
+    role: "High School Student",
   },
 ];
 
