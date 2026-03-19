@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Recycle, Droplets, Heart } from "lucide-react";
 
 const stats = [
-  { icon: Recycle, value: "100%", label: "Recyclable packaging" },
-  { icon: Droplets, value: "60%", label: "Less water used vs. fast fashion" },
-  { icon: Heart, value: "50+", label: "Ethical brand partners" },
+  { icon: Recycle, value: "100%", label: "Free & open for students" },
+  { icon: Droplets, value: "500+", label: "Brands rated for sustainability" },
+  { icon: Heart, value: "Zero", label: "Data sold — ever" },
 ];
 
 const Sustainability = () => (
@@ -18,10 +18,10 @@ const Sustainability = () => (
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-            Fashion that doesn't cost the earth
+            Fashion transparency at your fingertips
           </h2>
           <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8 max-w-md">
-            Every purchase on Sway supports brands committed to fair labour, sustainable materials, and reducing waste in the fashion industry.
+            Sway sits quietly in your browser and activates when you're shopping. No extra tabs, no research rabbit holes — just the info you need to make better choices.
           </p>
         </motion.div>
 
