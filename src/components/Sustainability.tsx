@@ -47,8 +47,7 @@ const Sustainability = () => (
           ))}
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 );
 
 export default Sustainability;
