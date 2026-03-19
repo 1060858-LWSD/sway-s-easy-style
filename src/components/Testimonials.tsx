@@ -10,7 +10,7 @@ const testimonials = [
   {
     quote: "Price factors in quite a lot because I like to save money whenever possible.",
     name: "Hauk B.",
-    role: "College Student",
+    role: "High School Student",
   },
   {
     quote: "Keeping an eye out for products that aren't crazy cost-involved.",
