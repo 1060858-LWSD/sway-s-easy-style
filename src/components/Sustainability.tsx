@@ -10,22 +10,23 @@ const stats = [
 const Sustainability = () => (
   <section id="sustainability" className="py-24 lg:py-32">
     <div className="container mx-auto px-6">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="text-center max-w-2xl mx-auto mb-16">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
             Fashion transparency at your fingertips
           </h2>
-          <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8 max-w-md">
+          <p className="font-body text-muted-foreground text-lg leading-relaxed max-w-md mx-auto">
             Sway sits quietly in your browser and activates when you're shopping. No extra tabs, no research rabbit holes — just the info you need to make better choices.
           </p>
         </motion.div>
+      </div>
 
-        <div className="grid gap-6">
+      <div className="grid lg:grid-cols-3 gap-6">
           {stats.map((s, i) => (
             <motion.div
               key={s.label}
@@ -46,8 +47,7 @@ const Sustainability = () => (
           ))}
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 );
 
 export default Sustainability;
