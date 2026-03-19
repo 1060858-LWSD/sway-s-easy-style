@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero-extension.jpg";
 import { Chrome } from "lucide-react";
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center pt-16">
+  <section className="relative min-h-screen flex items-center pt-28">
     <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
