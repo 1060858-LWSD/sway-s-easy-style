@@ -1,0 +1,53 @@
+import { motion } from "framer-motion";
+import { Recycle, Droplets, Heart } from "lucide-react";
+
+const stats = [
+  { icon: Recycle, value: "100%", label: "Recyclable packaging" },
+  { icon: Droplets, value: "60%", label: "Less water used vs. fast fashion" },
+  { icon: Heart, value: "50+", label: "Ethical brand partners" },
+];
+
+const Sustainability = () => (
+  <section id="sustainability" className="py-24 lg:py-32">
+    <div className="container mx-auto px-6">
+      <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+            Fashion that doesn't cost the earth
+          </h2>
+          <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8 max-w-md">
+            Every purchase on Sway supports brands committed to fair labour, sustainable materials, and reducing waste in the fashion industry.
+          </p>
+        </motion.div>
+
+        <div className="grid gap-6">
+          {stats.map((s, i) => (
+            <motion.div
+              key={s.label}
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              className="flex items-center gap-5 bg-card rounded-xl p-6 border border-border"
+            >
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                <s.icon className="w-7 h-7 text-primary" />
+              </div>
+              <div>
+                <p className="font-display text-3xl text-foreground">{s.value}</p>
+                <p className="font-body text-sm text-muted-foreground">{s.label}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+export default Sustainability;
