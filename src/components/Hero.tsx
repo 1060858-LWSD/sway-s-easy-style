@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero-clothing.jpg";
 
 const Hero = () => (
   <section className="relative min-h-screen flex items-center pt-16">
-    <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
