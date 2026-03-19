@@ -5,22 +5,22 @@ const testimonials = [
   {
     quote: "Not knowing how something is made prevents me from shopping sustainably.",
     name: "William W.",
-    role: "College Student",
+    role: "High School Student",
   },
   {
     quote: "Price factors in quite a lot because I like to save money whenever possible.",
     name: "Hauk B.",
-    role: "College Student",
+    role: "High School Student",
   },
   {
     quote: "Keeping an eye out for products that aren't crazy cost-involved.",
     name: "Tanush B.",
-    role: "College Student",
+    role: "High School Student",
   },
 ];
 
 const Testimonials = () => (
-  <section className="py-24 lg:py-32 bg-secondary/40">
+  <section className="py-16 lg:py-20 bg-secondary/40">
     <div className="container mx-auto px-6">
       <div className="text-center max-w-2xl mx-auto mb-16">
         <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
