@@ -33,7 +33,7 @@ const Navbar = () => {
           <a href="#how-it-works" className="block text-sm text-muted-foreground hover:text-foreground">How It Works</a>
           <a href="#features" className="block text-sm text-muted-foreground hover:text-foreground">Features</a>
           <a href="#sustainability" className="block text-sm text-muted-foreground hover:text-foreground">Sustainability</a>
-          <Button variant="hero" size="sm" className="w-full">Get Early Access</Button>
+          <Button variant="hero" size="sm" className="w-full">Sign Up</Button>
         </div>
       )}
     </nav>
