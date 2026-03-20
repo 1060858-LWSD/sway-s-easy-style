@@ -20,7 +20,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" size="sm">Log in</Button>
-          <Button variant="hero" size="sm">Get Early Access</Button>
+          <Button variant="hero" size="sm">Sign Up</Button>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <a href="#how-it-works" className="block text-sm text-muted-foreground hover:text-foreground">How It Works</a>
           <a href="#features" className="block text-sm text-muted-foreground hover:text-foreground">Features</a>
           <a href="#sustainability" className="block text-sm text-muted-foreground hover:text-foreground">Sustainability</a>
-          <Button variant="hero" size="sm" className="w-full">Get Early Access</Button>
+          <Button variant="hero" size="sm" className="w-full">Sign Up</Button>
         </div>
       )}
     </nav>
