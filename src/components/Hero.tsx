@@ -45,7 +45,7 @@ const Hero = () => (
         <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
           <img
             src={heroImg}
-            alt="Sway browser extension showing sustainability scores on an online clothing store"
+            alt="Sway browser extension showing sustainability analysis on a Hollister product page"
             className="w-full h-auto object-cover"
             loading="eager"
           />
