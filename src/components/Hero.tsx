@@ -32,7 +32,7 @@ const Hero = () => (
           Shop sustainably{" "}
           <span className="text-primary italic">without the guesswork.</span>
         </h1>
-        <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
+        <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
           Sway is a free browser extension that shows you sustainability scores, fair pricing, and brand trust — right on sites like Amazon and Hollister.
         </p>
         <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
