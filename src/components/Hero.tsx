@@ -35,7 +35,7 @@ const Hero = () => (
         <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
           Sway is a free browser extension that shows you sustainability scores, fair pricing, and brand trust — right on sites like Amazon and Hollister.
         </p>
-        <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+        <div className="flex flex-wrap gap-4">
           <Button variant="hero" size="lg">
             <Chrome className="w-5 h-5 mr-2" />
             Add to Chrome — It's Free
