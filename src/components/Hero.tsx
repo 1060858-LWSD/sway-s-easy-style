@@ -11,7 +11,8 @@ const Hero = () => (
       style={{
         backgroundImage: `url(${heroImg})`,
         backgroundSize: "contain",
-        backgroundPosition: "center",
+        backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat",
         maskImage: "linear-gradient(to right, transparent 50%, black 67%)",
         WebkitMaskImage: "linear-gradient(to right, transparent 50%, black 67%)",
       }}
