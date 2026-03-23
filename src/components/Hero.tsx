@@ -4,13 +4,27 @@ import heroImg from "@/assets/hero-extension.jpg";
 import { Chrome } from "lucide-react";
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center pt-28">
-    <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
+  <section className="relative min-h-screen flex items-center pt-28 overflow-hidden">
+    {/* Background image with left-to-right fade */}
+    <div
+      className="absolute inset-0 z-0"
+      style={{
+        backgroundImage: `url(${heroImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        maskImage: "linear-gradient(to right, transparent, black 60%)",
+        WebkitMaskImage: "linear-gradient(to right, transparent, black 60%)",
+      }}
+    />
+    {/* Overlay for readability */}
+    <div className="absolute inset-0 z-0 bg-background/70" />
+
+    <div className="container mx-auto px-6 relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-xl mx-auto lg:mx-0"
+        className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
       >
         <span className="inline-block text-sm font-body font-semibold tracking-widest uppercase text-accent mb-4">
           Browser Extension for Smarter Shopping
@@ -34,22 +48,6 @@ const Hero = () => (
         <p className="font-body text-xs text-muted-foreground mt-4">
           Also available for Firefox & Edge · No account needed
         </p>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative"
-      >
-        <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
-          <img
-            src={heroImg}
-            alt="Sway browser extension showing sustainability analysis on a Hollister product page"
-            className="w-full h-auto object-cover"
-            loading="eager"
-          />
-        </div>
       </motion.div>
     </div>
   </section>
