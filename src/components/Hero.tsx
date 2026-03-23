@@ -12,8 +12,8 @@ const Hero = () => (
         backgroundImage: `url(${heroImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        maskImage: "linear-gradient(to right, transparent, black 60%)",
-        WebkitMaskImage: "linear-gradient(to right, transparent, black 60%)",
+        maskImage: "linear-gradient(to right, transparent 50%, black 67%)",
+        WebkitMaskImage: "linear-gradient(to right, transparent 50%, black 67%)",
       }}
     />
     {/* Overlay for readability */}
