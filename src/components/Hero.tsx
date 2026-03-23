@@ -23,7 +23,7 @@ const Hero = () => (
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
+        className="max-w-xl text-left"
       >
         <span className="inline-block text-sm font-body font-semibold tracking-widest uppercase text-accent mb-4">
           Browser Extension for Smarter Shopping
@@ -32,10 +32,10 @@ const Hero = () => (
           Shop sustainably{" "}
           <span className="text-primary italic">without the guesswork.</span>
         </h1>
-        <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
+        <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
           Sway is a free browser extension that shows you sustainability scores, fair pricing, and brand trust — right on sites like Amazon and Hollister.
         </p>
-        <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+        <div className="flex flex-wrap gap-4">
           <Button variant="hero" size="lg">
             <Chrome className="w-5 h-5 mr-2" />
             Add to Chrome — It's Free
