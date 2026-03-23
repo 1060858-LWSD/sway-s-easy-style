@@ -10,8 +10,9 @@ const Hero = () => (
       className="absolute inset-0 z-0"
       style={{
         backgroundImage: `url(${heroImg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundSize: "contain",
+        backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat",
         maskImage: "linear-gradient(to right, transparent 50%, black 67%)",
         WebkitMaskImage: "linear-gradient(to right, transparent 50%, black 67%)",
       }}
