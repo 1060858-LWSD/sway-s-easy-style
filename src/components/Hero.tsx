@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero-extension.jpg";
 import { Chrome } from "lucide-react";
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center pt-28 overflow-hidden bg-background mt-16">
+  <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-background mt-16">
     {/* Background image with left-to-right fade into solid background */}
     <div
       className="absolute inset-0 z-0"
