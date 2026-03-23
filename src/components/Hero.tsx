@@ -23,7 +23,7 @@ const Hero = () => (
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
+        className="max-w-xl text-left"
       >
         <span className="inline-block text-sm font-body font-semibold tracking-widest uppercase text-accent mb-4">
           Browser Extension for Smarter Shopping
