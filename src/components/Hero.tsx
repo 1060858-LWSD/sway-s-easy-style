@@ -4,8 +4,8 @@ import heroImg from "@/assets/hero-extension.jpg";
 import { Chrome } from "lucide-react";
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center pt-28 overflow-hidden">
-    {/* Background image with left-to-right fade */}
+  <section className="relative min-h-screen flex items-center pt-28 overflow-hidden bg-background">
+    {/* Background image with left-to-right fade into solid background */}
     <div
       className="absolute inset-0 z-0"
       style={{
@@ -17,8 +17,6 @@ const Hero = () => (
         WebkitMaskImage: "linear-gradient(to right, transparent 50%, black 67%)",
       }}
     />
-    {/* Overlay for readability */}
-    <div className="absolute inset-0 z-0 bg-background/70" />
 
     <div className="container mx-auto px-6 relative z-10">
       <motion.div
